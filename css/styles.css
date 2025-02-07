@@ -1,3 +1,11 @@
+root{
+    --color-primario: #ffc107;
+    --color-secundario: #00ff00;
+    --color-terciario: #0000ff;
+    --blanco: #ffffff;
+    --oscuro:#212121;
+}/*Normalmente se guarda las variables de colores en la pagina*/
+
 html{
     font-size: 62.5%;
 }
@@ -12,7 +20,7 @@ body{
     text-align: center;
     font-size: 3.8rem;
     text-transform: uppercase;
-    color: blue;
+    color: var(--color-primario);
 
 }
 
@@ -20,8 +28,4 @@ body{
     font-size: 2rem;
     text-transform: capitalize;/*Mi formato marca*/
     color: red;
-}
-
-span{
-    color: green;
 }
