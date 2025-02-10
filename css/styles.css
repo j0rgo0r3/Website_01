@@ -39,7 +39,10 @@ body{
 .navegacion-principal {
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;/*se trabaja con flex row*/
+    justify-content: space-between;/*se trabaja con flex row*/
+    /*flex-direction: column; /*se trabaja con columns*/
+    /*align-items: flex-start;*//*se trabaja con flex columns*/
 }
 
 .navegacion-principal a{
