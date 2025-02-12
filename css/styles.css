@@ -46,7 +46,7 @@ h1, h2, h3{
 }
 
 .contenedor{
-    max-width: 120rem;/*Toma el ancho, si no toma el 100%*/
+    max-width: 100rem;/*Toma el ancho, si no toma el 100%*/
     margin: 0 auto;
 }
 
@@ -119,3 +119,4 @@ h1, h2, h3{
     display: flex;
     
 }
+
