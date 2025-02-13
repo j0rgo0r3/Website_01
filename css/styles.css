@@ -2,6 +2,7 @@
     --primario: #FFC107;
     --segundario: #0097A7;
     --gris: #757575;
+    --grisClaro: DFE9F3;
     --blanco: #FFFFFF;
     --oscuro:#212121;
 
@@ -9,7 +10,7 @@
 
 html{
     font-size: 62.5%;
-    box-sizing: border-box;
+    box-sizing: border-box; /* hack para box model*/
 }
 
 *, *:before, *:after{
@@ -21,8 +22,10 @@ body{
     
     font-size: 16px;/* 1rem = 10px */
     font-family: 'krub', sans-serif, Roboto;/*video 27*/
-    
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+   
 }
+/*Tipografia*/
 h1{
     font-size: 3.8rem;
     text-transform: uppercase;
@@ -48,6 +51,32 @@ h1, h2, h3{
 .contenedor{
     max-width: 120rem;/*Toma el ancho, si no toma el 100%*/
     margin: 0 auto;
+}
+
+.boton{
+    background-color: var(--segundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-align: center;
+    height: 8rem;/* hacer mas gordo el boton*/
+    display: flex;/* para centrar el texto*/
+    flex-direction: column;/* para centrar el texto*/
+    justify-content: center;/* para centrar el texto*/
+}
+
+@media (min-width: 768px) {
+    .boton{
+        width: auto;
+        height: auto;/*regresar tamaño normal el boton*/
+    }
+    
 }
 
 .nav-bg{
