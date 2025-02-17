@@ -97,26 +97,32 @@
         
             <section>
                 <h2>Contacto</h2>
-                <form>
+                <form class="formulario">
                     <fieldset>
                         <legend>Contactanos llenando este formulario</legend>
-                        <div>
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre Completo" required>
-                        </div>
-                        <div>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Tu Email Institucional" required>
-                        </div>
-                        <div>
-                            <label for="telefono">Teléfono:</label>
-                            <input type="tel" id="telefono" name="telefono" placeholder="Tu Teléfono">
-                        </div>
-                        <div>
-                            <label for="mensaje">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Tu Mensaje" required></textarea>
-                        </div>
-                        <button type="submit">Enviar</button>
+                        
+                        <div class="contenedor-campos">                                             
+                            <div class="campo">
+                                <label for="nombre">Nombre:</label>
+                                <input class="input-text" type="text" id="nombre" name="nombre" placeholder="Tu Nombre Completo" required>
+                            </div>
+                            <div class="campo">
+                                <label for="email">Email:</label>
+                                <input class="input-text" type="email" id="email" name="email" placeholder="Tu Email Institucional" required>
+                            </div>
+                            <div class="campo">
+                                <label for="telefono">Teléfono:</label>
+                                <input class="input-text" type="tel" id="telefono" name="telefono" placeholder="Tu Teléfono">
+                            </div>
+                            <div class="campo">
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea class="input-text" name="mensaje" rows="4" cols="50" placeholder="Tu Mensaje" required></textarea>
+                            </div>
+                        </div><!-- Contenedor-campos -->
+
+                        <div class="enviar">
+                            <button class="boton" type="submit">Enviar</button>
+                        </div>                        
                     </fieldset>
                 </form>        
             </section>
